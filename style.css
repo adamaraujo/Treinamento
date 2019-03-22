@@ -1,34 +1,17 @@
 body {
     background-color: #288FCB;
-    margin: 0px;
     font-family: 'Segoe UI';
 }
 h1 {
     font-family: 'Patua One', cursive;
-    margin: 0px;
 }
 .title {
     color: #288FCB;
     background: #094C6E;
     display: flex;
     justify-content: center;
-    margin: 0; 
+    margin: 0px;
     padding: 5px;
-}
-.container {
-    display: flex;
-    margin-top: 20px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-.container-div {
-    background-color: #EEEFF1;
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 7px;
-    border: 1px solid black;
 }
 a {
     background-color: #ED5A43;
@@ -41,10 +24,6 @@ a:hover {
     background-color: salmon;
     -webkit-transition-duration: 0.5s;
 }
-ol {
-    padding: 0px 7px;
-    list-style-type: none;
-}
 .retangle {
     background-color: white;
     padding: 5px;
@@ -52,22 +31,13 @@ ol {
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.3);
     border-radius: 7px;
 }
-button {
-    background-color: #64BB50;
-    text-decoration: none;
-    color: white;
-    border: none;
-    padding: 6px;
-    margin: 10px 0px 5px 3px;
-    border-radius: 5px;
-}
-button:hover {
-    -webkit-transition-duration: 0.4s;
-    background-color: white;
-    color: black;
-}
 input {
-    width: 95%;
-    margin-left: 3px;
+    width: 100%;
     margin-top: 15px;
+}
+.card {
+    background-color: white;
+}
+.btnlarge {
+    margin: 10px 0px;
 }

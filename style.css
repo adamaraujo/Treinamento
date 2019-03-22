@@ -8,7 +8,7 @@ h1 {
     margin: 0px;
 }
 .title {
-    color: #4284AB;
+    color: #288FCB;
     background: #094C6E;
     display: flex;
     justify-content: center;
@@ -22,12 +22,11 @@ h1 {
     justify-content: space-around;
     align-items: flex-start;
 }
-.container > div {
+.container-div {
     background-color: #EEEFF1;
     width: 250px;
     margin: 10px;
     padding: 10px;
-    align-items: flex-start;
     border-radius: 7px;
     border: 1px solid black;
 }
@@ -46,7 +45,7 @@ ol {
     padding: 0px 7px;
     list-style-type: none;
 }
-li {
+.retangle {
     background-color: white;
     padding: 5px;
     margin: 15px 0px;
@@ -70,4 +69,5 @@ button:hover {
 input {
     width: 95%;
     margin-left: 3px;
+    margin-top: 15px;
 }

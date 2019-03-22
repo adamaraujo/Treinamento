@@ -9,47 +9,58 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet"> 
 </head>
 <body>
+    <script type="text/javascript" src="dragndrop.js"></script>
     <h1 class="title">Trello </h1>
     <div class="container">
 
-    <div>
+    <div class="container-div" id="cont1" ondrop="drop(event)" ondragover="allowDrop(event)">
     <h1>To Do</h1>
-    <ol>
-        <li>Aprender Framework</li>
-        <a href="http://www.google.com">Excluir</a>
-        <li>Fazer café</li>
-        <a href="http://www.google.com">Excluir</a>
-        <li>Iniciar projeto</li>
-        <a href="http://www.google.com">Excluir</a>
-    </ol>
+        <div id="div1" draggable="true" ondragstart="drag(event)">
+            <div class="retangle">Aprender Framework</div>
+            <a href="http://www.google.com">Excluir</a>
+        </div>
+        <div id="div2" draggable="true" ondragstart="drag(event)">
+            <div class="retangle">Fazer café</div>
+            <a href="http://www.google.com">Excluir</a>
+        </div>
+        <div id="div3" draggable="true" ondragstart="drag(event)">
+            <div class="retangle">Iniciar projeto</div>
+            <a href="http://www.google.com">Excluir</a>
+        </div>
     <div>
         <input type="text" placeholder="Adicionar item"></br>
         <button>Adicionar</button>
     </div>
     </div>
-    <div>
+    <div class="container-div" id="cont2" ondrop="drop(event)" ondragover="allowDrop(event)">
     <h1>Doing</h1>
-    <ol>
-        <li>Aprender HTML</li>
+    <div id="div4" draggable="true" ondragstart="drag(event)">
+        <div class="retangle">Aprender HTML</div>
         <a href="http://www.google.com">Excluir</a>
-        <li>Aprender CSS</li>
+    </div>
+    <div id="div5" draggable="true" ondragstart="drag(event)">
+        <div class="retangle">Aprender CSS</div>
         <a href="http://www.google.com">Excluir</a>
-        <li>Aprender Javascript</li>
+    </div>
+    <div id="div6" draggable="true" ondragstart="drag(event)">
+        <div class="retangle">Aprender Javascript</div>
         <a href="http://www.google.com">Excluir</a>
-    </ol>
+    </div>
     <div>
         <input type="text" placeholder="Adicionar item"></br>
         <button>Adicionar</button>
     </div>
     </div>
-    <div>
+    <div class="container-div" id="cont3" ondrop="drop(event)" ondragover="allowDrop(event)">
     <h1>Done</h1>
-    <ol>
-        <li>Entrevista</li>
+    <div id="div7">
+        <div class="retangle" draggable="true" ondragstart="drag(event)">Entrevista</div>
         <a href="http://www.google.com">Excluir</a>
-        <li>Dinâmica de grupo</li>
+    </div>
+    <div id="div8">
+        <div class="retangle" draggable="true" ondragstart="drag(event)">Dinâmica de Grupo</div>
         <a href="http://www.google.com">Excluir</a>
-    </ol>
+    </div>
     <div>
         <input type="text" placeholder="Adicionar item"></br>
         <button>Adicionar</button>

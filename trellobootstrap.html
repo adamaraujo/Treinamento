@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trello</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel ="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet"> 
 </head>
@@ -15,81 +16,73 @@
     <div class="container">
     <div class="row">
     
-    <div class="col-sm-3 card" id="cont1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="col-sm-4">
+    <div class="classWithPad">
     <h1>To Do</h1>
-        <div id="div1" draggable="true" ondragstart="drag(event)">
-            <div class="retangle">Aprender Framework</div>
-            <button type="button" class="btn btn-danger">Excluir</button>
-        </div>
-        <div id="div2" draggable="true" ondragstart="drag(event)">
-            <div class="retangle">Fazer café</div>
-            <button type="button" class="btn btn-danger">Excluir</button>
-        </div>
-        <div id="div3" draggable="true" ondragstart="drag(event)">
-            <div class="retangle">Iniciar projeto</div>
-            <button type="button" class="btn btn-danger">Excluir</button>
+        <div id="div1" class="box" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <div id="drag1" draggable="true" ondragstart="drag(event)">
+                <div class="retangle" data-toggle="dropdown" class="dropdown-toggle">Aprender Framework</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+            <div id="drag2" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Fazer café</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+            <div id="drag3" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Iniciar projeto</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
         </div>
     <div>
         <input type="text" placeholder="Adicionar item"></br>
-        <button type="button" class="btn btn-success my-10">Success</button>
+        <button type="button" class="btn btn-success my-10">Adicionar</button>
+    </div>
     </div>
     </div>
 
-    <div class="col-sm-3 card" id="cont2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="col-sm-4">
+    <div class="classWithPad">
     <h1>Doing</h1>
-    <div id="div4" draggable="true" ondragstart="drag(event)">
-        <div class="retangle">Aprender HTML</div>
-        <button type="button" class="btn btn-danger">Excluir</button>
-    </div>
-    <div id="div5" draggable="true" ondragstart="drag(event)">
-        <div class="retangle">Aprender CSS</div>
-        <button type="button" class="btn btn-danger">Excluir</button>
-    </div>
-    <div id="div6" draggable="true" ondragstart="drag(event)">
-        <div class="retangle">Aprender Javascript</div>
-        <button type="button" class="btn btn-danger">Excluir</button>
-    </div>
+        <div id="div2" class="box" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <div id="drag4" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Aprender HTML</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+            <div id="drag5" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Aprender CSS</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+            <div id="drag6" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Aprender Javascript</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+        </div>
     <div>
         <input type="text" placeholder="Adicionar item"></br>
-        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-success">Adicionar</button>
+    </div>
     </div>
     </div>
     
-    <div class="col-sm-3 card" id="cont3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="col-sm-4">
+    <div class="classWithPad">
     <h1>Done</h1>
-    <div id="div7">
-        <div class="retangle" draggable="true" ondragstart="drag(event)">Entrevista</div>
-        <button type="button" class="btn btn-danger">Excluir</button>
-    </div>
-    <div id="div8">
-        <div class="retangle" draggable="true" ondragstart="drag(event)">Dinâmica de Grupo</div>
-        <button type="button" class="btn btn-danger">Excluir</button>
-    </div>
-    <div>
+        <div id="div3" class="box" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <div id="drag7" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Entrevista</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+            <div id="drag8" draggable="true" ondragstart="drag(event)">
+                <div class="retangle">Dinâmica de Grupo</div>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>   
+        </div>
         <input type="text" placeholder="Adicionar item"></br>
-        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-success">Adicionar</button>
     </div>
     </div>
 
-    <div class="col-sm-3 card" id="cont4" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <h1>Done</h1>
-            <div id="div9">
-                <div class="retangle" draggable="true" ondragstart="drag(event)">Entrevista</div>
-                <button type="button" class="btn btn-danger">Excluir</button>
-            </div>
-            <div id="div10">
-                <div class="retangle" draggable="true" ondragstart="drag(event)">Dinâmica de Grupo</div>
-                <button type="button" class="btn btn-danger">Excluir</button>
-            </div>
-            <div>
-                <input type="text" placeholder="Adicionar item"></br>
-                <button type="button" class="btn btn-success" style="padding: 10px 0px">Success</button>
-            </div>
     </div>
-
-    </div>
-    </div>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
 </body>
 </html>

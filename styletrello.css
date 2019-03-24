@@ -1,0 +1,21 @@
+body {
+    background-color: #288FCB;
+    font-family: 'Segoe UI';
+}
+.header {
+    color: #288FCB;
+    background-color: #094C6E;
+    text-align: center;
+}
+.title {
+    font-size: 30px;
+    margin: 5px 0px;
+    font-family: 'Patua One', cursive;
+}
+.box {
+    background-color: white;
+}
+.classWithPad { 
+    margin-top: 10px;
+    background-color: white;
+}

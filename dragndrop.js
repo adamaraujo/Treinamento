@@ -6,8 +6,9 @@ function allowDrop(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
   }
   
-  function drop(ev) {
+  function drop(ev, el) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    el.appendChild(document.getElementById(data));
   }
+  
